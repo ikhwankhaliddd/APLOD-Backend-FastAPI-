@@ -30,7 +30,7 @@ def preProcess_data(text):
 
 app = FastAPI()
 
-data = pd.read_csv('data.csv')
+data = pd.read_csv('dataset/data.csv')
 tokenizer = Tokenizer(num_words=2000, split=' ')
 tokenizer.fit_on_texts(data['Tweet'].values)
 
