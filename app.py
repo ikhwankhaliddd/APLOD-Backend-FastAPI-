@@ -53,7 +53,7 @@ def basic_view():
 def take_inp():
     return '''<form method="post"> 
     <h1>Text Classification</h1>
-    <input type="text" maxlength="28" name="text" value=""/>  
+    <input type="text" maxlength="280" name="text" value=""/>  
     <input type="submit"/> 
     </form>'''
 
