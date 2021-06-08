@@ -67,11 +67,9 @@ def predict(text:str = Form(...)): #input is from forms
     sentiment = int(np.argmax(predictions)) #index of maximum prediction
     probability = max(predictions.tolist()[0]) #probability of maximum prediction
     if sentiment==0: #assigning appropriate name to prediction
-        t_sentiment = 'Netral'
+        t_sentiment = 'Negatif'
     elif sentiment==1:
         t_sentiment = 'Positif'
-    elif sentiment==2:
-        t_sentiment='Negatif'
     
     return { #returning a dictionary as endpoint
         "Kalimat": text,
