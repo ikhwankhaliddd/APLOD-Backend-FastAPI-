@@ -32,7 +32,7 @@ app = FastAPI()
 
 data = pd.read_csv('dataset/dataset.csv')
 tokenizer = Tokenizer(num_words=2000, split=' ')
-tokenizer.fit_on_texts(data['Tweet'].values)
+tokenizer.fit_on_texts(data['Sentences'].values)
 
 
 
